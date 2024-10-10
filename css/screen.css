@@ -1,0 +1,110 @@
+:root {
+    --main-color: #431615;
+    --text-color: white;
+    --white-color: white;
+}
+
+.grid {
+    width: 1700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grid_column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* CARSOSEL */
+
+.app_together {
+    position: relative;
+    margin-top: 105px;
+    height: 100%;
+}
+
+.carsosel_banel_adv {
+    margin-bottom: 15px;
+}
+
+.img-carousel {
+    height: 250px;
+}
+
+.box_menu {
+    color: var(--main-color) !important;
+    background-color: #fcd50d;
+    padding: 6px 5px 6px;
+}
+
+/* MODAL CONTENT */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hiện modal khi có class 'open' */
+.modal.open {
+    display: flex;
+}
+
+
+
+/* Overlay của modal */
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+

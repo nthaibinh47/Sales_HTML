@@ -1,0 +1,77 @@
+.grid_introduce {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.line {
+    display: block;
+    /* Đặt thành khối để căn giữa */
+    border: none;
+    height: 3px;
+    background-color: #fcd50d;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.introduce_Restaurant {
+    text-align: center;
+}
+
+.in_main {
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.in_main_headling {
+    margin: 0;
+    padding: 10px 0px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fcd50d;
+}
+
+.in_head_title {
+    margin: 20px 0px 0px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.in_head_title_small {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.in_head_title_img {
+    margin-top: 10px;
+}
+
+.in_new_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 20px 20px 20px;
+}
+
+.img_introduce {
+    padding: 15px;
+}
+
+.in_img {
+    height: 278px;
+    width: 400px;
+}
+
+.in_img2 {
+    width: 100%;
+    height: auto;
+}
+
+.list_text_item {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: left;
+}
+

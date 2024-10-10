@@ -1,0 +1,109 @@
+.list_menu {
+    background-color: var(--main-color);
+}
+
+.menu_dinner_main {
+    padding: 20px 0;
+}
+
+.list_menu_detail {
+    display: flex;
+    justify-content: center;
+}
+
+.list_menu_detail-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 13px 15px;
+    position: relative;
+}
+
+.list_menu_detail-title--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid white;
+    height: 20px;
+    background-color: white;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.grid_menu {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu_eat {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.menu_eat_title h3 {
+    color: #441416;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 0px 3px;
+    margin: 0;
+}
+
+.menu_eat_price {
+    padding-bottom: 3px;
+}
+
+.menu_eat_price del {
+    font-family: "Arial";
+    font-style: italic;
+    color: #d1d1d1;
+    font-size: 20px;
+}
+
+.menu_eat_price span {
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    color: #c53b3b;
+}
+
+.img_menu {
+    width: 250px;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.menu_eat_action a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "UTM Neo";
+    font-weight: 700;
+    background: #441416;
+    color: #fcd50d;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.list_menu_detail-title:hover{
+    cursor: pointer;
+    color: #fcd50d;
+}
+
+.list_menu_detail-title-choose{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color:#fcd50d;
+    padding: 13px 15px;
+    position: relative;
+}
+
+.menu_eat_action a:hover {
+    background-color: #4d4e1b;
+}

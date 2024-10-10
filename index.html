@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/screen.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER_NAV -->
+        <div class="header">
+            <div class="grid">
+                <div class="header_nav">
+                    <div class="header_nav_logo">
+                        <a href="#"><img src="./img/logo.webp" alt=""></a>
+                    </div>
+
+                    <div class="header_nav_top_bottom">
+                        <div class="header_nav_top">
+                            <ul class="header_nav_top_app">
+                                <li class="header_nav_app-all header_nav_top_app_text header__navbar-item--separate">
+                                    Vào cửa hàng bằng ứng dụng
+                                    <div class="header_qr">
+                                        <img src="./img/qr_code.png" alt="QR code" class="header_qr-img">
+                                        <div class="header_qr-apps">
+                                            <a href="" class="header_qr-link">
+                                                <img src="./img/apple.png" alt="Apple" class="header_qr-download-img">
+                                            </a>
+                                            <a href="" class="header_qr-link">
+                                                <img src="./img/chplay.png" alt="CH play"
+                                                    class="header_qr-download-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header_nav_app-all">
+                                    <a href="#" id="login-button" class="header_nav_login">
+                                        <i class="header__navbar-icon fa-solid fa-user"></i>
+                                        Đăng nhập
+                                    </a>
+                                </li>
+
+                                <!-- <li class="header_nav_app-all">
+                                    <a>
+                                        <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                                    </a>
+
+                                    <div class="header_nav_cart">
+                                        <div class="header_cart-wrap" id="cart-toggle">
+                                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                            <span class="header_cart-notice">0</span>
+                                        </div>
+                                    </div>
+                                </li> -->
+
+
+                            </ul>
+                        </div>
+
+                        <div class="header_nav_bottom">
+                            <ul class="header_nav_bottom_menu">
+                                <li>
+                                    <a href="./Introduce.html">VỀ CHÚNG TÔI</a>
+                                </li>
+
+                                <li>
+                                    <a href="./Menu.html">THỰC ĐƠN</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">CHUYỆN CƠM TẤM</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">TIN TỨC</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="#">CỬA HÀNG</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">TUYỂN DỤNG</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider_form">
+            <div class="form_address">
+                <div class="form_address-text">
+                    <h2 class="text_dathang">ĐẶT HÀNG</h2>
+                    <P class="text_decoration">
+                        Vui lòng chọn khu vực bạn muốn đặt hàng
+                    </P>
+
+                    <div class="text_city">
+                        <select class="text_city-detail" id="citySelect" onchange="showCitySelect()">
+                            <option value="default">Chọn cửa hàng</option>
+                            <option value="tp-hcm">Thành phố Hồ Chí Minh</option>
+                            <!-- Thêm các thành phố khác ở đây -->
+                        </select>
+                    </div>
+
+                    <div class="text_district" id="districtSelect" style="display: none;">
+                        <select class="text_district-detail">
+                            <option value="default">Chọn quận</option>
+
+                            <option value="quan-1">Quận 1</option>
+
+                            <option value="quan-2">Quận 2</option>
+
+                            <option value="quan-3">Quận 3</option>
+
+                            <option value="quan-5">Quận 5</option>
+
+                            <option value="quan-6">Quận 6</option>
+
+                            <option value="quan-7">Quận 7</option>
+
+                            <option value="quan-9">Quận 9</option>
+
+                            <option value="quan-10">Quận 10</option>
+
+                            <option value="quan-12">Quận 12</option>
+
+                            <option value="quan-binh-thanh">Quận Bình Thạnh</option>
+
+                            <option value="quan-go-vap">Quận Gò Vấp</option>
+
+                            <option value="quan-phu-nhuan">Quận Phú Nhuận</option>
+
+                            <option value="quan-tan-binh">Quận Tân Bình</option>
+
+                            <option value="quan-tan-phu">Quận Tân Phú</option>
+
+                            <option value="quan-thu-duc">Quận Thủ Đức</option>
+                            n>
+                            <!-- Thêm các quận khác ở đây -->
+                        </select>
+                    </div>
+
+                    <div class="text_accept">
+                        <a href="./Menu.html">ĐẶT HÀNG NGAY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <div class="col col-third wrapper-1">
+                <a href="" class="wrapper-1-img">
+                    <img src="./img/wrapper1.webp" alt="" class="img-wrapper">
+                </a>
+            </div>
+            <div class="col col-third wrapper-1">
+                <a href="" class="wrapper-1-img">
+                    <img src="./img/wrapper2.webp" alt="" class="img-wrapper">
+                </a>
+            </div>
+            <div class="col col-third wrapper-1">
+                <a href="" class="wrapper-1-img">
+                    <img src="./img/wrapper3.webp" alt="" class="img-wrapper">
+                </a>
+            </div>
+        </div>
+
+        <!-- FOOTER_ADV -->
+        <div class="grid-adv">
+            <div class="footer_adv">
+                <div class="footer_adv_provider">
+                    <div class="provider_1">
+                        <img src="./img/provider1.webp" alt="" class="img-adv">
+                        <div class="provider_1_text">
+                            Sử dụng thực phẩm
+                            <br>
+                            Nguồn gốc rõ ràng
+                        </div>
+                    </div>
+
+                    <div class="provider_1">
+                        <img src="./img/provider2.webp" alt="" class="img-adv">
+                        <div class="provider_1_text">
+                            Sử dụng thực phẩm
+                            <br>
+                            Nguồn gốc rõ ràng
+                        </div>
+                    </div>
+
+                    <div class="provider_1">
+                        <img src="./img/provider3.webp" alt="" class="img-adv">
+                        <div class="provider_1_text">
+                            Sử dụng thực phẩm
+                            <br>
+                            Nguồn gốc rõ ràng
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_adv_tell">
+                    <a href="0934088604">
+                        <img src="./img/tell.webp" alt="" class="img-adv_tell">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <div class="footer_logomain">
+                            <a href="/" class="footer_head-logo">
+                                <img src="./img/logo.webp" alt="" class="footer_head-logo-img">
+                            </a>
+                            <div class="footer_logo-span">
+                                <span class="footer_span">Thơm ngon từng hạt cơm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Giới thiệu</h3>
+                        <ul class="footer_list">
+                            <li class="footer_list-item">
+                                <a href="" class="footer_list-item-link">Giới thiệu</a>
+                            </li>
+
+                            <li class="footer_list-item">
+                                <a href="" class="footer_list-item-link">Xuất xứ</a>
+                            </li>
+
+                            <li class="footer_list-item">
+                                <a href="" class="footer_list-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Theo dõi</h3>
+                        <ul class="footer_list">
+                            <div class="btn_link">
+                                <a href="https://www.facebook.com/binh.b.bu.7/" class="footer_list-item-link">
+                                    <i class="footer_list-item-link-icon fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nthaibinh47/" class="footer_list-item-link">
+                                    <i class="footer_list-item-link-icon fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://github.com/nthaibinh47" class="footer_list-item-link">
+                                    <i class="footer_list-item-link-icon fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Vào cửa hàng</h3>
+                        <ul class="footer_list">
+                            <li class="footer_list-item">
+                                <a href="" class="footer_list-item-link">Trung tâm trợ giúp</a>
+                            </li>
+
+                            <li class="footer_list-item">
+                                <a href="" class="footer_list-item-link">Mini GT - Shop</a>
+                            </li>
+
+                            <li class="footer_list-item">
+                                <a href="" class="footer_list-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Trên ứng dụng</h3>
+                        <div class="footer_download">
+                            <img src="./img/qr_code.png" alt="Download QR" class="footer_download-qr">
+                            <div class="footer_download-app">
+                                <a href="" class="footer_download-app-link">
+                                    <img src="./img/apple.png" alt="Apple store" class="footer_download-app-img">
+                                </a>
+                                <a href="" class="footer_download-app-link">
+                                    <img src="./img/chplay.png" alt="CH play" class="footer_download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- FORM_CART -->
+        <div class="form_cart" id="cart" style="display: none;">
+            <div class="form_cart_item">
+                <div class="cart_item_head">
+                    <button class="head_cart_close" id="cart-close">X</button>
+                </div>
+                <div class="cart_item_body">
+                    <ul class="header__cart-list-item" id="cart-items">
+                        <!-- Các sản phẩm sẽ được thêm vào đây -->
+                    </ul>
+                </div>
+                <div class="cart_item_total">
+                    <span class="total_label">Tổng cộng:</span>
+                    <span class="total_price" id="total-price">0₫</span>
+                </div>
+                <div class="cart_item_action">
+                    <a href="/pages/thuc-don" class="btn_continue">Tiếp tục</a>
+                    <a href="/checkout" class="btn_checkout">Thanh toán</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGIN -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Form Đăng Nhập -->
+                <div class="form-dky-dnhap" id="login-form"> <!-- Để form đăng nhập ở trên cùng và hiển thị mặc định -->
+                    <div class="form-dky-dnhap_container">
+                        <span class="form-dky-dnhap_close" id="close-modal">&times;</span>
+                        <div class="form-dky-dnhap_header">
+                            <h3 class="form-dky-dnhap_heading">Đăng nhập</h3>
+                            <span class="form-dky-dnhap_switch_BTN" id="switch-to-register">Đăng ký</span>
+                        </div>
+                        <div class="form-dky-dnhap_form">
+                            <div class="form-dky-dnhap_group">
+                                <input type="text" class="form-dky-dnhap_input" id="email"
+                                    placeholder="Nhập email của bạn">
+                            </div>
+                            <div class="form-dky-dnhap_group">
+                                <input type="password" class="form-dky-dnhap_input" id="password"
+                                    placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="form-dky-dnhap_controls">
+                            <button class="btn btn--primary back">Trở lại</button>
+                            <button class="btn btn--primary" id="login-submit">Đăng nhập</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Đăng Ký -->
+                <div class="form-dky-dnhap" id="register-form" style="display: none;"> <!-- Ẩn form đăng ký mặc định -->
+                    <div class="form-dky-dnhap_container">
+                        <div class="form-dky-dnhap_header">
+                            <h3 class="form-dky-dnhap_heading">Đăng ký</h3>
+                            <span class="form-dky-dnhap_switch_BTN" id="switch-to-login">Đăng nhập</span>
+                        </div>
+                        <div class="form-dky-dnhap_form">
+                            <div class="form-dky-dnhap_group">
+                                <input type="text" class="form-dky-dnhap_input" placeholder="Nhập email của bạn">
+                            </div>
+                            <div class="form-dky-dnhap_group">
+                                <input type="password" class="form-dky-dnhap_input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="form-dky-dnhap_group">
+                                <input type="password" class="form-dky-dnhap_input"
+                                    placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="form-dky-dnhap_controls">
+                            <button class="btn btn--normal back">Trở lại</button>
+                            <button class="btn btn--primary">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!--------MỞ FORM ĐĂNG NHẬP-------->
+    <script>
+        const loginButton = document.getElementById('login-button');
+        const modal = document.querySelector('.modal');
+        const closeModal = document.getElementById('close-modal');
+        const modalOverlay = document.querySelector('.modal__overlay');
+
+        // Mở modal khi nhấn nút "Đăng nhập"
+        loginButton.addEventListener('click', function (event) {
+            event.preventDefault();  // Ngăn chặn hành động mặc định của thẻ <a>
+            modal.classList.add('open');
+        });
+
+        // Đóng modal khi nhấn dấu X
+        closeModal.addEventListener('click', function () {
+            modal.classList.remove('open');
+        });
+
+        // Đóng modal khi nhấn vào overlay
+        modalOverlay.addEventListener('click', function () {
+            modal.classList.remove('open');
+        });
+        // 
+        // 
+        // 
+        // Lấy các phần tử từ form
+        // Lấy các phần tử trong form
+        const loginSubmitButton = document.getElementById('login-submit');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+
+        // Bắt sự kiện khi nhấn nút "Đăng nhập"
+        loginSubmitButton.addEventListener('click', function (event) {
+            event.preventDefault();  // Ngăn chặn hành động mặc định của nút submit
+
+            // Lấy giá trị từ các ô nhập liệu
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            // Kiểm tra nếu email hoặc mật khẩu trống
+            if (!email || !password) {
+                alert('Vui lòng nhập đầy đủ email và mật khẩu!');
+                return;
+            }
+
+            // In ra console để kiểm tra
+            console.log('Email:', email);
+            console.log('Password:', password);
+
+            // Bạn có thể gửi thông tin này lên server hoặc xử lý tiếp ở đây
+            // Ví dụ:
+            // loginUser(email, password);  // Hàm để gửi dữ liệu lên server
+        });
+        function loginUser(email, password) {
+            // Tạo dữ liệu đăng nhập
+            const loginData = {
+                email: email,
+                password: password
+            };
+
+            // Gửi dữ liệu đến server (thay URL bằng URL thật của bạn)
+            fetch('https://your-backend-url.com/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loginData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Đăng nhập thành công!');
+                        // Chuyển hướng hoặc thực hiện hành động khác sau khi đăng nhập thành công
+                        window.location.href = 'trang-chu.html';  // Ví dụ chuyển đến trang chủ
+                    } else {
+                        alert('Đăng nhập thất bại: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi đăng nhập:', error);
+                    alert('Có lỗi xảy ra khi đăng nhập.');
+                });
+        }
+
+        // CHUYỂN ĐĂNG NHẬP QUA ĐĂNG KÝ
+        // Lấy các phần tử của form
+        const registerForm = document.getElementById('register-form');
+        const loginForm = document.getElementById('login-form');
+
+        // Lấy nút chuyển đổi giữa các form
+        const switchToLoginButton = document.getElementById('switch-to-login');
+        const switchToRegisterButton = document.getElementById('switch-to-register');
+
+        // Sự kiện chuyển từ form đăng ký sang đăng nhập
+        switchToLoginButton.addEventListener('click', function () {
+            registerForm.style.display = 'none';  // Ẩn form đăng ký
+            loginForm.style.display = 'block';  // Hiển thị form đăng nhập
+        });
+
+        // Sự kiện chuyển từ form đăng nhập sang đăng ký
+        switchToRegisterButton.addEventListener('click', function () {
+            loginForm.style.display = 'none';  // Ẩn form đăng nhập
+            registerForm.style.display = 'block';  // Hiển thị form đăng ký
+        });
+
+
+    </script>
+    <script language="javascript" src="./scripts/java.js"></script>
+</body>
+
+</html>

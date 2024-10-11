@@ -17,6 +17,22 @@
 
 <body>
     <!-- HEADER NAV -->
+    <div class="header1">
+        <div class="grid">
+            <div class="header1__nav">
+                <div class="header1__nav-img">
+                    <img src="https://minigt.tsm-models.com/img/logo_1-w.svg" alt="" class="header1_1_img">
+                    <img src="https://minigt.tsm-models.com/img/logo_2-w.svg" alt="" class="header1_img">
+                    <img src="https://minigt.tsm-models.com/img/logo_3-w.svg" alt="" class="header1_img">
+                </div>
+                <div class="header1__nav-text">
+                    <span class="header1__nav-text-ting">Welcome to the new website of Biu-GT brand, please feel
+                        free to look around!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER_NAV -->
     <div class="header">
         <div class="grid">
             <div class="header_nav">
@@ -45,23 +61,50 @@
                                 <a>
                                     <i class="header__navbar-icon fa-brands fa-facebook"></i>
                                 </a>
-                                <a>
-                                    <i class="header__navbar-icon fa-brands fa-instagram"></i>
-                                </a>
+
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./img/user.jpg" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Thái Bình</span>
+
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="">Đơn mua</a>
+                                    </li>
+
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="" class="">Đăng xuất</a>
+                                    </li>
+                                </ul>
                             </li>
+
+                            <!-- Icon giỏ hàng -->
+                            <div class="header_nav_cart">
+                                <div class="header_cart-wrap" id="cart-toggle">
+                                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                    <span class="header_cart-notice">0</span>
+                                    <!-- Phần tử để hiển thị số lượng sản phẩm -->
+                                </div>
+                            </div>
+
+                            </li>
+
+
                         </ul>
                     </div>
 
                     <div class="header_nav_bottom">
                         <ul class="header_nav_bottom_menu">
                             <li>
-                                <a href="" class="box_menu">VỀ CHÚNG TÔI</a>
+                                <a href="./Introduce.html">VỀ CHÚNG TÔI</a>
                             </li>
 
                             <li>
-                                <a href="./Menu.html">THỰC ĐƠN</a>
+                                <a href="./Menu.html">NƯỚC HOA</a>
                             </li>
-                            
+
                             <li>
                                 <a href="#">CHUYỆN CƠM TẤM</a>
                             </li>
@@ -84,7 +127,6 @@
             </div>
         </div>
     </div>
-
     <div class="app_together">
         <!-- CARSOSEL -->
         <div class="carsosel_banel_adv">
@@ -99,13 +141,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/banner_adv1.webp" class="d-block w-100 img-carousel" alt="...">
+                        <img src="./img/panel2.jpg" class="d-block w-100 img-carousel" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/banner_adv2.webp" class="d-block w-100 img-carousel" alt="...">
+                        <img src="./img/panel.jpg" class="d-block w-100 img-carousel" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/banner_adv2.webp" class="d-block w-100 img-carousel" alt="...">
+                        <img src="./img/panel3.jpg" class="d-block w-100 img-carousel" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

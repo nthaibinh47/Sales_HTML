@@ -51,28 +51,43 @@
 }
 
 .menu_eat {
-    text-align: center;
     margin-bottom: 40px;
-
+    text-align: center;
 }
 
-.menu_eat_title h3 {
+
+.menu_eat_title_h3dam{
+    color: #441416;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0px 0px 0px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.menu_eat_title_h3lot{
     color: #441416;
     font-size: 13px;
-    font-weight: 600;
-    padding: 8px 0px 3px;
+    font-weight: 400;
+    padding: 5px 0px 5px;
     margin: 0;
 }
 
 .menu_eat_price {
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+}
+
+.img_voucher{
+    width: 20px;
+    height: 20px;
 }
 
 .menu_eat_price del {
     font-family: "Arial";
     font-style: italic;
     color: #d1d1d1;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .menu_eat_price span {
@@ -88,8 +103,6 @@
     height:100%;
     border-radius: 50px;
 }
-
-
 
 .menu_eat_action a {
     display: inline-block;

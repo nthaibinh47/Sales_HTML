@@ -1,7 +1,21 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
 /* NAVBAR */
 .header1 {
     background-color: #2c2c2e;
     display: flex;
+    align-items: center;
+    height: 40px;
 }
 
 .header1__nav {
@@ -27,16 +41,21 @@
 
 /* Header thông báo */
 .header__navbar-list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     padding-left: 0;
     margin: 4px 0 0 0;
-    display: flex;
 }
 
 .header__navbar-item {
     margin: 0 8px;
     position: relative;
     min-height: 26px;
+}
+
+.thongbao {
+    display: flex;
 }
 
 .header__thongbao {
@@ -127,7 +146,6 @@
 
 .header__thongbao-item--daxem {
     background-color: #eeeeee;
-    ;
 }
 
 .header__thongbao-link {
@@ -149,8 +167,8 @@
 .header__thongbao-ten {
     display: block;
     font-size: 14px;
-    color: var(--text-color);
-    font-weight: 400;
+    color: black;
+    font-weight: 500;
     line-height: 18px;
 }
 
@@ -160,19 +178,29 @@
     line-height: 20px;
     color: #756f6e;
     margin-top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+    /* hoặc bất cứ kích thước nào phù hợp */
+
 }
 
 .header__thongbao-footer {
     display: flex;
 }
 
+.header__thongbao-footer:hover {
+    background-color: #f3f3f3;
+}
+
 .header__thongbao-footer-btn {
     text-decoration: none;
-    color: var(--text-color);
+    color: black;
     width: 100%;
     padding: 12px 32px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /* NAVBAR */
@@ -204,38 +232,18 @@
 
 .header_nav_top_app {
     position: relative;
-
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 5px 0px 15px 0px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
 .header_nav_app-all {
     display: flex;
     align-items: center;
-    margin: 0 8px;
+    margin: 0 10px;
     position: relative;
-}
-
-.header_nav_login {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    /* Không có gạch chân */
-    color: #fff;
-    /* Màu chữ */
-    padding: 5px;
-    /* Khoảng cách bên trong */
-    border-radius: 5px;
-    /* Bo góc */
-    transition: background-color 0.3s;
-    /* Hiệu ứng chuyển màu */
-}
-
-.header_nav_login:hover {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .header__navbar-item--separate::after {
@@ -307,6 +315,7 @@
 }
 
 .header__navbar-user-name {
+    color: black;
     margin-left: 5px;
     font-size: 14px;
     font-weight: 500;
@@ -380,9 +389,9 @@
 .header__navbar-item-link {
     display: inline-block;
     font-size: 13px;
-    color: black;
+    color: white;
     text-decoration: none;
-    font-weight: 350;
+    font-weight: 500;
 
 }
 
@@ -674,7 +683,7 @@
     height: 910px;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/main.jpg);
+    background: url('../img/main.jpg') top center/ cover no-repeat;
 }
 
 .form_address {
@@ -753,6 +762,7 @@
     text-decoration: none;
     font-weight: bold;
     color: black;
+    font-size: 16px;
 }
 
 .text_accept:hover {
@@ -789,7 +799,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .footer_adv_provider {
@@ -850,7 +860,7 @@
 }
 
 .footer_heading {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     color: var(--text-color);
@@ -891,185 +901,18 @@
     width: 120px;
 }
 
-/* FORM ĐĂNG KÝ | ĐĂNG NHẬP */
-.form-dky-dnhap {
-    width: 500px;
-    background-color: var(--white-color);
-    overflow: hidden;
-    border-radius: 5px;
+/* Chữ Đăng nhập */
+
+.class-dangnhap:hover {
+    cursor: pointer;
+    color: #bdbdbd;
 }
 
-.form-dky-dnhap_container {
-    padding: 0 32px;
-
-}
-
-.form-dky-dnhap_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 12px;
-    margin-top: 10px;
-}
-
-.form-dky-dnhap_heading {
-    font-size: 20px;
-    font-weight: 400;
+.class_dangnhap_click {
+    text-decoration: none;
     color: black;
-}
-
-.form-dky-dnhap_switch_BTN {
+    text-transform: uppercase;
+    font-weight: 500;
     font-size: 16px;
-    color: var(--primary-color);
-    font-weight: 450;
-    cursor: pointer;
-}
-
-.form-dky-dnhap_input {
-    width: 100%;
-    height: 40px;
-    margin-top: 16px;
-    padding: 0 16px;
-    font-size: 14px;
-    border: 1.5px solid black;
-    border-radius: 3px;
-    outline: none;
-    font-weight: 430;
-}
-
-.form-dky-dnhap_input:focus {
-    border-color: #777;
-}
-
-.form-dky-dnhap_span {
-    margin-top: 18px;
-}
-
-.form-dky-dnhap_policy-text {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    padding: 0 12px;
-}
-
-.form-dky-dnhap_text-link {
-    color: black;
-    text-decoration: none;
-
-}
-
-.form-dky-dnhap_controls {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-
-.back {
-    margin-right: 8px;
-}
-
-.form-dky-dnhap_footer {
-    background-color: #f5f5f5;
-    padding: 16px 32px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 22px;
-}
-
-.form-dky-dnhap_footer-icon {
-    font-size: 18px;
-}
-
-.form-dky-dnhap_footer-fb {
-    background-color: #3a5a98;
-    color: var(--white-color);
-}
-
-.form-dky-dnhap_footer-title {
-    margin: 0 30px;
-}
-
-.form-dky-dnhap_footer-gg {
-    color: #666;
-    background-color: var(--white-color);
-}
-
-.form-dky-dnhap_help {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.form-dky-dnhap_help-link {
-    text-decoration: none;
-    font-size: 14px;
-    color: #939393;
-}
-
-.form-dky-dnhap_help-gach {
-    display: block;
-    border-left: 1px solid var(--border-color);
-    margin: 0 16px;
-    height: 16px;
-}
-
-.form-dky-dnhap_help-link-quen {
-    color: var(--primary-color);
-}
-
-/* Nút thoát (dấu X) */
-.form-dky-dnhap_close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.form-dky-dnhap_close:hover {
-    color: #f00;
-}
-
-.btn {
-    min-width: 124px;
-    height: 34px;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    font-size: 14px;
-    padding: 0 12px;
-    outline: none;
-    cursor: pointer;
-    color: var(--text-color);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.btn--size--s {
-    height: 32px;
-    font-size: 12px;
-    padding: 0 8px;
-}
-
-.btn.btn--primary {
-    color: var(--white-color);
-    background-color: #666;
-}
-
-.btn.btn--disable {
-    color: #949494;
-    cursor: default;
-    filter: brightness(80%);
-    background-color: #999;
-}
-
-.btn.btn--normal:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.back {
-    margin-right: 8px;
+    margin-left: 5px;
 }
